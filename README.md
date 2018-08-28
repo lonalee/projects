@@ -1,2 +1,2 @@
 # projects
-# Here go my projects which could be small, simple but fundamental
+## Here my projects go, which could be small, simple but fundamental.
