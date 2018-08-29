@@ -140,14 +140,20 @@ header {
 .main-nav span {
   text-align: center;
   display: block;
-}
-.sub-menu-list {
-  border: 1px solid;
-  position: absolute;
-  width: 190px;
+  margin-bottom: 10px;
 }
 .sub-menu {
   margin-left: 0;
+  margin-bottom: 10px;
+}
+.sub-menu-list {
+  display: none;
+}
+.show-list {
+  display: inline-block;
+  transition: display 0.5s;
+  position: absolute;
+  width: 190px;
 }
 /* section 1 */
 section {
@@ -156,10 +162,10 @@ section {
 .col {
   float: left;
   width: 275px;
-  border: 1px solid blueviolet;
   margin-right: 10px;
-}
+  margin-bottom: 60px;
 
+}
 .row {
   margin-bottom: 15px;
 }
@@ -171,9 +177,43 @@ section {
     margin-bottom: 15px;
 }
 
-
 .box p {
   padding: 1%;
   font-size: 90%;
   line-height: 145%;
+  margin-bottom: 30px;
+}
+
+
+/* meals section */
+.section-meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+.meal-photo img {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  transform: scale(1.2);
+  transition: transform 0.5s, opacity 0.5s;    /* transition은 효과가 시작되기 전 상태의 요소에 적용해야 함*/
+}
+.meal-photo img:hover {
+  transform: scale(1.031);      /* scale(1)하면 아래쪽에 하얀색 실선이 보임 */
+  opacity: 1;
 }
