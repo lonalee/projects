@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="vendors/css/normalize.css" >
+  <!-- <link rel="stylesheet" href="vendors/css/normalize.css" > -->
   <link rel="stylesheet" href="resources/css/style.css">
   <!-- <link rel="stylesheet" href="resources/css/grid.css"> -->
   <link href="https://unpkg.com/ionicons@4.4.1/dist/css/ionicons.min.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -18,12 +19,14 @@
         <img class="logo" src="./resources/css/image/logo-white.png" alt="OmniFood">
         <ul class="main-nav">
           <span>MENU</span>
+          <div class="sub-menu-container">
             <div class="sub-menu-list">
               <li class="sub-menu"><a href="">Food delivery</a></li>
               <li class="sub-menu"><a href="">How it works</a></li>
               <li class="sub-menu"><a href="">Our cities</a></li>
               <li class="sub-menu"><a href="">Sign up</a></li>
             </div>
+          </div>
         </ul>
       </div>
     </nav>
@@ -72,7 +75,7 @@
 
   <!-- my trail for meal section -->
   <section class="section-meals">
-      <ul class="meals-showcase">
+      <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo"><img src="/resources/css/image/1.jpg" alt=""></figure>
         </li>
@@ -86,7 +89,7 @@
           <figure class="meal-photo"><img src="/resources/css/image/4.jpg" alt=""></figure>
         </li>
       </ul>
-      <ul class="meals-showcase">
+      <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo"><img src="/resources/css/image/5.jpg" alt=""></figure>
         </li>
@@ -100,6 +103,53 @@
           <figure class="meal-photo"><img src="/resources/css/image/8.jpg" alt=""></figure>
         </li>
       </ul>
+  <!-- img carousel -->
+    <div class="carousel-container">
+      <div class="carousel-box">
+        <ul class="meals-carousel">
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/1.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/2.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/3.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/4.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/5.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/6.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/7.jpg" alt=""></figure>
+            </li>
+            <li>
+              <figure class="meal-carousel"><img src="/resources/css/image/8.jpg" alt=""></figure>
+            </li>
+            <li>
+                <figure class="meal-carousel"><img src="/resources/css/image/5.jpg" alt=""></figure>
+              </li>
+              <li>
+                <figure class="meal-carousel"><img src="/resources/css/image/6.jpg" alt=""></figure>
+              </li>
+              <li>
+                <figure class="meal-carousel"><img src="/resources/css/image/7.jpg" alt=""></figure>
+              </li>
+              <li>
+                <figure class="meal-carousel"><img src="/resources/css/image/8.jpg" alt=""></figure>
+              </li>
+        </ul>
+    </div>
+    </div>
+    <button class="btn2 btn-left">&lt;</button>
+    <button class="btn2 btn-right">&gt;</button>
+
+
   </section>
   <script src="./resources/js/eventControl.js"></script>
 </body>

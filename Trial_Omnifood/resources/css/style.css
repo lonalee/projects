@@ -13,6 +13,15 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;  /*역할 무엇??*/
 }
+
+.clearfix {zoom: 1;}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /* reusable components */
 .row {
   max-width: 1140px;
@@ -188,6 +197,7 @@ section {
 /* meals section */
 .section-meals {
   padding: 0;
+  position: relative;
 }
 .meals-showcase {
   list-style: none;
@@ -216,4 +226,67 @@ section {
 .meal-photo img:hover {
   transform: scale(1.031);      /* scale(1)하면 아래쪽에 하얀색 실선이 보임 */
   opacity: 1;
+}
+
+
+.carousel-container {
+  width: 54%;
+  height: 250px;
+  margin: 0 auto;
+  border: 1px solid yellow;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.meal-carousel {
+  list-style: none;
+  width: 302.5px;
+  float: left;
+  background-color: #000;
+  overflow: hidden;
+}
+.meal-carousel img:hover {
+  opacity: 1;
+  transform: scale(1.031);
+}
+.meals-carousel li {
+  list-style: none;
+}
+
+.meal-carousel img {
+  padding: 10px 10px;
+  width: 100%;
+  height: 25%;
+  opacity: 0.5;
+  transform: scale(1.2);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.carousel-box {
+  width: 5000px;
+  height: 250px;
+  position: absolute;
+}
+
+.btn2 {
+  position: absolute;
+  height: 228px;
+  font-size: 200%;
+  background-color: white;
+  color: orange;
+  border: white;
+  top: 947px;
+  cursor: pointer;
+}
+.btn-left {
+  left: 0;
+  margin-left: 250px;
+}
+.btn-right {
+  right: 0;
+  margin-right: 250px;
+}
+.move-right {
+  transform: translateX(-886px);
+  transition: transform 1s;
 }
