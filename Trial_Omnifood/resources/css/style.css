@@ -230,7 +230,7 @@ section {
 
 
 .carousel-container {
-  width: 54%;
+  width: 898px;
   height: 250px;
   margin: 0 auto;
   border: 1px solid yellow;
@@ -255,7 +255,6 @@ section {
 }
 
 .meal-carousel img {
-  padding: 10px 10px;
   width: 100%;
   height: 25%;
   opacity: 0.5;
@@ -266,6 +265,7 @@ section {
   width: 5000px;
   height: 250px;
   position: absolute;
+  transform: translateX(-937px);
 }
 
 .btn2 {
@@ -289,4 +289,54 @@ section {
 .move-right {
   transform: translateX(-886px);
   transition: transform 1s;
+}
+
+/* how it works */
+.section-steps {
+  background-color: #f4f4f4;
+}
+.steps-box:first-child {
+  margin-top: 30px;
+  text-align: right;
+  margin-left: 20%;
+}
+/* .steps-box:last-child {
+  width: 300px;
+  margin-top: 70px;
+} */
+.app-screen {
+  width: 80%;
+}
+.work-steps {
+  margin-bottom: 30px;
+}
+.work-steps:last-of-type {
+  margin-bottom: 70px;
+}
+.work-steps div {
+  float: left;
+  /* display: inline-block; */
+  font-size: 140%;
+  border: 2px solid #BF55EC;
+  color: #BF55EC;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;   /* div안의 txt(1,2,3)를 원을 기준으로 가운데 정렬 */
+  line-height: 150%;
+  margin-right: 30px;
+}
+.steps {
+  width: 460px;
+  margin-left: 5%;
+  margin-top: 70px;
+}
+.btn-app-container {
+  width: 50%;
+  float: left;
+  margin-left: 5%;
+}
+.btn-app img {
+  height: 50px;
+  width: 168.75px;
 }

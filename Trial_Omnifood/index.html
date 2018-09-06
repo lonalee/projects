@@ -89,7 +89,7 @@
           <figure class="meal-photo"><img src="/resources/css/image/4.jpg" alt=""></figure>
         </li>
       </ul>
-      <ul class="meals-showcase clearfix">
+      <ul class="meals-showcase clearfix"> <!-- ul의 자식요소들이 float하고 있어서 section의 높이가 0, clearfix::after이므로 li에 적용될 것이다.-->
         <li>
           <figure class="meal-photo"><img src="/resources/css/image/5.jpg" alt=""></figure>
         </li>
@@ -148,6 +148,36 @@
     </div>
     <button class="btn2 btn-left">&lt;</button>
     <button class="btn2 btn-right">&gt;</button>
+
+    <section class="section-steps">
+      <div class="row">
+        <h2>How it works &mdash; simple as 1, 2, 3</h2>
+      </div>
+      <div class="row clearfix">
+        <div class="col steps-box">
+          <img src="/resources/css/image/app-iPhone.png" alt="" class="app-screen">
+        </div>
+        <div class="col steps-box steps">
+          <div class="work-steps">
+            <div>1</div>
+            <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+          </div>
+            <div class="work-steps">
+              <div>2</div>
+              <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+            </div>
+            <div class="work-steps">
+              <div>3</div>
+              <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+            </div>
+          </div>
+        <div class="btn-app-container">
+          <a href="#" class="btn-app"><img src="resources/css/image/download-app.svg" alt="AppStore btn"></a>
+          <a href="#" class="btn-app"><img src="resources/css/image/download-app-android.png" alt="PlayStore btn"></a>
+        </div>
+      </div>
+
+    </section>
 
 
   </section>
